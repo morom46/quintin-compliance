@@ -33,11 +33,14 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-6 md:p-8 h-full">
+    <form 
+      onSubmit={handleSubmit} 
+      className="bg-white rounded-lg shadow-md p-6 md:p-8 h-full transition-all duration-300 hover:shadow-lg"
+    >
       <h3 className="text-2xl font-bold mb-6 text-slate-800">Contact Us</h3>
       
       <div className="space-y-5">
-        <div>
+        <div className="transition-transform duration-300 hover:translate-x-1">
           <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
             Name
           </label>
@@ -47,12 +50,12 @@ const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full"
+            className="w-full transition-all duration-200 focus:border-slate-500 focus:ring-1 focus:ring-slate-500"
             required
           />
         </div>
         
-        <div>
+        <div className="transition-transform duration-300 hover:translate-x-1">
           <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">
             Email
           </label>
@@ -62,12 +65,12 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full"
+            className="w-full transition-all duration-200 focus:border-slate-500 focus:ring-1 focus:ring-slate-500"
             required
           />
         </div>
         
-        <div>
+        <div className="transition-transform duration-300 hover:translate-x-1">
           <label htmlFor="company" className="block text-sm font-medium text-slate-700 mb-1">
             Company
           </label>
@@ -77,11 +80,11 @@ const ContactForm = () => {
             name="company"
             value={formData.company}
             onChange={handleChange}
-            className="w-full"
+            className="w-full transition-all duration-200 focus:border-slate-500 focus:ring-1 focus:ring-slate-500"
           />
         </div>
         
-        <div>
+        <div className="transition-transform duration-300 hover:translate-x-1">
           <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">
             Message
           </label>
@@ -91,7 +94,7 @@ const ContactForm = () => {
             rows={4}
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-500 resize-none"
+            className="w-full px-3 py-2 border border-slate-300 rounded-md transition-all duration-200 focus:outline-none focus:ring-1 focus:ring-slate-500 focus:border-slate-500 resize-none"
             required
           />
         </div>
@@ -99,7 +102,7 @@ const ContactForm = () => {
       
       <Button
         type="submit"
-        className="w-full mt-6 bg-slate-700 hover:bg-slate-800"
+        className="w-full mt-6 bg-slate-700 hover:bg-slate-800 transition-all duration-300 transform hover:translate-y-[-2px] hover:shadow-md"
       >
         Submit
       </Button>
