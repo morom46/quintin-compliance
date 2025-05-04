@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -26,9 +25,6 @@ const Navbar = () => {
             </Link>
             <Link to="/services" className="text-slate-700 hover:text-slate-900 px-3 py-2 font-medium">
               Services
-            </Link>
-            <Link to="/market" className="text-slate-700 hover:text-slate-900 px-3 py-2 font-medium">
-              Market Insights
             </Link>
             <Link to="/about" className="text-slate-700 hover:text-slate-900 px-3 py-2 font-medium">
               About Us
@@ -73,13 +69,6 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Services
-            </Link>
-            <Link 
-              to="/market" 
-              className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Market Insights
             </Link>
             <Link 
               to="/about" 

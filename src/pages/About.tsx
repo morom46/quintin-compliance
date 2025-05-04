@@ -1,4 +1,3 @@
-
 import HeroSection from "@/components/HeroSection";
 import { Shield, Award, Users, Briefcase } from "lucide-react";
 
@@ -13,7 +12,7 @@ const About = () => {
       {/* Our Mission */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-1 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold mb-6 text-slate-800">Our Mission</h2>
               <p className="text-lg text-slate-600 mb-6">
@@ -24,14 +23,6 @@ const About = () => {
                 We are dedicated to ensuring quality and validating trust in the pharmaceutical industry, addressing the critical 
                 need for adherence to stringent regulations that protect consumers and maintain the integrity of pharmaceutical products.
               </p>
-            </div>
-            
-            <div>
-              <img 
-                src="/lovable-uploads/1ef228c8-e568-4e43-9f25-b956c7d22715.png" 
-                alt="Pharmaceutical laboratory" 
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
             </div>
           </div>
         </div>
@@ -89,15 +80,7 @@ const About = () => {
       {/* Our Approach */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <img 
-                src="/lovable-uploads/d30737a0-4351-41e9-8675-d269dca1aaf1.png" 
-                alt="Pharmaceutical professionals" 
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
-            </div>
-            
+          <div className="grid md:grid-cols-1 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold mb-6 text-slate-800">Our Approach</h2>
               <p className="text-lg text-slate-600 mb-6">
@@ -116,6 +99,18 @@ const About = () => {
         </div>
       </section>
       
+      {/* Global Reach and Inspection Readiness */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6 text-slate-800">Global Reach & Inspection Readiness</h2>
+          <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+            Whether you're preparing for your first inspection or managing complex operations across global sites, 
+            Quintin Compliance is equipped to support you. We are dedicated to keeping your quality standards sharp 
+            and ensuring your operations remain compliant, no matter the scale or location.
+          </p>
+        </div>
+      </section>
+
       {/* Our Team */}
       <section className="py-16 px-4 bg-slate-50">
         <div className="max-w-7xl mx-auto">
@@ -123,13 +118,6 @@ const About = () => {
           
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-white rounded-lg shadow-md p-8 border border-slate-100">
-              <div className="mb-6">
-                <img 
-                  src="/lovable-uploads/2b27cfb6-1b64-4722-98db-512b2883d60f.png" 
-                  alt="Team member" 
-                  className="rounded-lg shadow w-full h-auto"
-                />
-              </div>
               <h3 className="text-2xl font-bold mb-2 text-slate-800">Leadership Team</h3>
               <p className="text-slate-600 mb-4">
                 Our leadership team brings together decades of experience in pharmaceutical compliance, 
@@ -139,13 +127,6 @@ const About = () => {
             </div>
             
             <div className="bg-white rounded-lg shadow-md p-8 border border-slate-100">
-              <div className="mb-6">
-                <img 
-                  src="/lovable-uploads/310b0e9e-3267-4ba6-9504-4ec4adf9b535.png" 
-                  alt="Technical experts" 
-                  className="rounded-lg shadow w-full h-auto"
-                />
-              </div>
               <h3 className="text-2xl font-bold mb-2 text-slate-800">Technical Experts</h3>
               <p className="text-slate-600 mb-4">
                 Our technical team consists of qualified professionals with specialized expertise in GMP, 

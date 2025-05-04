@@ -1,4 +1,3 @@
-
 import HeroSection from "@/components/HeroSection";
 import { Check } from "lucide-react";
 
@@ -15,11 +14,6 @@ const Services = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-white rounded-lg shadow-md p-8 border border-slate-100">
-              <div className="mb-6">
-                <span className="bg-slate-100 p-3 rounded-md inline-block">
-                  <span className="text-slate-700 font-bold text-2xl">📦</span>
-                </span>
-              </div>
               <h3 className="text-2xl font-bold mb-4 text-slate-800">Product Inspections</h3>
               <p className="text-slate-600 mb-6">
                 We inspect raw materials, in-process goods, and finished products, focusing on API integrity and purity. 
@@ -52,11 +46,6 @@ const Services = () => {
             </div>
             
             <div className="bg-white rounded-lg shadow-md p-8 border border-slate-100">
-              <div className="mb-6">
-                <span className="bg-slate-100 p-3 rounded-md inline-block">
-                  <span className="text-slate-700 font-bold text-2xl">📋</span>
-                </span>
-              </div>
               <h3 className="text-2xl font-bold mb-4 text-slate-800">GMP Audit Consulting</h3>
               <p className="text-slate-600 mb-6">
                 Our gap analysis, remediation plans, and mock audits prepare facilities for regulatory 
@@ -90,11 +79,6 @@ const Services = () => {
           </div>
           
           <div className="mt-12 bg-white rounded-lg shadow-md p-8 border border-slate-100">
-            <div className="mb-6">
-              <span className="bg-slate-100 p-3 rounded-md inline-block">
-                <span className="text-slate-700 font-bold text-2xl">👥</span>
-              </span>
-            </div>
             <h3 className="text-2xl font-bold mb-4 text-slate-800">Compliance Training</h3>
             <p className="text-slate-600 mb-6">
               We offer customized training programs for personnel at all levels, covering GMP, data integrity, 
