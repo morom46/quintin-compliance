@@ -8,12 +8,6 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
-    // Adding proper history API fallback for SPA routing
-    historyApiFallback: {
-      rewrites: [
-        { from: /^\/quintin-compliance\/.*/, to: '/quintin-compliance/index.html' }
-      ]
-    }
   },
   plugins: [
     react({
