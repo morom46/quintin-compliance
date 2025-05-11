@@ -103,3 +103,37 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Enhanced blue content boxes styling */
+@layer components {
+  .enhanced-box {
+    @apply bg-gradient-to-br from-slate-50 to-blue-50 
+           shadow-md hover:shadow-lg transition-all duration-300 
+           border border-slate-200/50 backdrop-blur-sm 
+           rounded-xl overflow-hidden p-6 md:p-8;
+  }
+  
+  .enhanced-box-light {
+    @apply bg-gradient-to-br from-white to-slate-50/80
+           shadow-sm hover:shadow-md transition-all duration-300 
+           border border-slate-100 
+           rounded-lg overflow-hidden p-6;
+  }
+  
+  .enhanced-box-dark {
+    @apply bg-gradient-to-br from-slate-800 to-blue-900/90
+           shadow-lg hover:shadow-xl transition-all duration-300
+           border border-slate-700/50
+           text-white rounded-xl overflow-hidden p-6 md:p-8;
+  }
+
+  .content-section {
+    @apply relative;
+  }
+
+  .content-section::before {
+    @apply content-[''] absolute top-0 left-0 w-full h-full 
+           bg-gradient-to-r from-blue-500/5 to-indigo-500/5 
+           pointer-events-none;
+  }
+}

@@ -28,8 +28,8 @@ const Footer = () => {
             <h3 className="text-base font-semibold mb-2">Contact Us</h3>
             <ul className="space-y-1 text-sm text-slate-300">
               <li>Email: info@quintincompliance.com</li>
-              <li>Phone: +91 123 456 7890</li>
-              <li>Address: Pharmaceutical District, Mumbai, India</li>
+              <li>Phone: +91 93139 15222</li>
+              <li>Address: GIDC, Makarpura, Gujarat 390013, India</li>
               <li><a href="https://www.linkedin.com/company/quintin-compliance/" target="_blank" rel="noopener noreferrer" className="hover:text-white">LinkedIn</a></li>
             </ul>
           </div>

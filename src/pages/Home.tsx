@@ -30,9 +30,9 @@ const Home = () => {
       {/* Hero Section */}
       <motion.div initial="hidden" animate="visible" variants={sectionVariants}>
         <HeroSection
-          title="Introducing Quintin Compliance: Your Partner in Pharmaceutical Excellence"
-          subtitle="We address the critical need for adherence to stringent regulations through comprehensive third-party inspection, auditing, and consulting services."
-          ctaText="Discover Our Services"
+          title="Quintin Compliance: Elevating Pharmaceutical Standards"
+          subtitle="Partner with us to ensure regulatory excellence through meticulous third-party inspections, comprehensive audits, and expert consulting services."
+          ctaText="Explore Our Expertise"
           ctaLink="/services"
         />
       </motion.div>
@@ -174,7 +174,7 @@ const Home = () => {
             viewport={{ once: true, amount: 0.2 }}
           >
             <motion.div
-              className="transition duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 rounded-lg"
+              className="h-full transition duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 rounded-lg flex"
               variants={itemVariants}
             >
               <ServiceCard
@@ -184,7 +184,7 @@ const Home = () => {
               />
             </motion.div>
             <motion.div
-              className="transition duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 rounded-lg"
+              className="h-full transition duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 rounded-lg flex"
               variants={itemVariants}
             >
               <ServiceCard
@@ -194,7 +194,7 @@ const Home = () => {
               />
             </motion.div>
             <motion.div
-              className="transition duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 rounded-lg"
+              className="h-full transition duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 rounded-lg flex"
               variants={itemVariants}
             >
               <ServiceCard
