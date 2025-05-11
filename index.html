@@ -14,7 +14,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@quintincompliance" />
     
-    <link rel="icon" href="/quintin-compliance/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     
     <!-- Start GitHub Pages SPA routing fix -->
     <script type="text/javascript">
@@ -22,6 +22,9 @@
       // MIT License
       // https://github.com/rafgraph/spa-github-pages
       (function(l) {
+        // Skip this script if not on GitHub Pages
+        if (l.hostname !== "morom46.github.io") return;
+        
         if (l.search[1] === '/' ) {
           var decoded = l.search.slice(1).split('&').map(function(s) { 
             return s.replace(/~and~/g, '&')

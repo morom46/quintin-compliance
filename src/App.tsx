@@ -12,12 +12,16 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// Determine the basename based on the deployment environment
+const isGitHubPages = window.location.hostname === "morom46.github.io";
+const basename = isGitHubPages ? "/quintin-compliance" : "";
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/quintin-compliance">
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
