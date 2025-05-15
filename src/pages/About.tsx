@@ -41,31 +41,22 @@ const About = () => {
         viewport={{ once: true, amount: 0.2 }}
         variants={sectionVariants}
       >
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div variants={itemVariants}>
-              <img 
-                src="/lovable-uploads/f8e72fa3-9f1f-4b22-87d2-820968485ed7.jpeg" 
-                alt="Quintin Compliance Team" 
-                className="rounded-lg shadow-lg enhanced-box overflow-hidden"
-              />
-            </motion.div>
-            <motion.div variants={itemVariants}>
-              <h2 className="text-3xl font-bold mb-6 text-slate-800">Our Story</h2>
-              <p className="text-lg text-slate-600 mb-6">
-                Quintin Compliance was founded in 2010 by a team of pharmaceutical industry veterans who recognized 
-                the critical need for independent, third-party quality assurance in the growing global pharmaceutical supply chain.
-              </p>
-              <p className="text-lg text-slate-600 mb-6">
-                What began as a small consulting firm has grown into a global leader in pharmaceutical compliance services, 
-                with operations spanning three continents and partnerships with some of the world's most respected pharmaceutical manufacturers.
-              </p>
-              <p className="text-lg text-slate-600">
-                Our mission remains unchanged: to safeguard public health by ensuring pharmaceutical products meet the 
-                highest standards of quality and safety, through rigorous inspection, testing, and compliance verification.
-              </p>
-            </motion.div>
-          </div>
+        <div className="max-w-3xl mx-auto">
+          <motion.div variants={itemVariants}>
+            <h2 className="text-3xl font-bold mb-6 text-slate-800 text-center">Our Story</h2>
+            <p className="text-lg text-slate-600 mb-6 text-center">
+              Quintin Compliance was founded in 2025 by a team of pharmaceutical industry veterans who recognized 
+              the critical need for independent, third-party quality assurance in the growing global pharmaceutical supply chain.
+            </p>
+            {/* <p className="text-lg text-slate-600 mb-6 text-center">
+              What began as a small consulting firm has grown into a global leader in pharmaceutical compliance services, 
+              with operations spanning three continents and partnerships with some of the world's most respected pharmaceutical manufacturers.
+            </p> */}
+            <p className="text-lg text-slate-600 text-center">
+              Our mission remains unchanged: to safeguard public health by ensuring pharmaceutical products meet the 
+              highest standards of quality and safety, through rigorous inspection, testing, and compliance verification.
+            </p>
+          </motion.div>
         </div>
       </motion.section>
       
